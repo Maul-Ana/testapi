@@ -5,6 +5,7 @@ var router = express.Router();
 
 router.get('/', (req, res) => {
     res.sendFile(__path + '/views/index.html')
+    res.json({ true: "Silahkan baca dokumentasi di https://github.com/Zhirrr/Kartun-Api" })
 })
 
 router.get('/about', (req, res) => {
@@ -15,11 +16,11 @@ router.get('/config', (req, res) => {
     config = {
         status: true,
         result: {
-            prefix : '.',
-            namabot: 'HansBOT',
-            namaowner: 'Hans',
-            instagram: 'mszpros',
-            youtube : 'Msz Pros'
+            prefix : '/',
+            namabot: 'ZhirrrBot',
+            namaowner: 'Zhirrr',
+            instagram: 'zhirr_ajalah',
+            youtube : 'Gak Punya'
         }
     }
     res.json(config)
